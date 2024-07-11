@@ -35,4 +35,12 @@ class UserProfile(models.Model):
         # Return the flag URL based on location
         return f"https://example.com/flags/{self.location}.png"
 
+
+class UserProfile(models.Model):
+    ...
+    @property
+    def location_flag(self):
+        # Return the flag URL based on location
+        return f"https://example.com/flags/{self.location}.png"
+
     

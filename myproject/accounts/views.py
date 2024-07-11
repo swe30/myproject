@@ -50,4 +50,8 @@ class FileUploadView(View):
             uploaded_file.save()
             process_video.delay(uploaded_file.id)
             return redirect('file_list')
-        return render(request, 'upload.html', {'form': form})    
+        return render(request, 'upload.html', {'form': form}) 
+
+
+ 
+      
